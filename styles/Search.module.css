@@ -1,0 +1,121 @@
+.container {
+  position: relative;
+  height: 4.5rem;
+  margin: 0 0 3rem 3rem;
+}
+
+.search {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  padding-bottom: 0.6rem;
+  font-size: 1.2rem;
+  color: rgb(170, 170, 170);
+}
+
+.search:-webkit-autofill,
+.search:-webkit-autofill:hover,
+.search:-webkit-autofill:focus,
+.search:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(53, 53, 53) inset !important;
+  box-shadow: none;
+  -webkit-text-fill-color: rgb(170, 170, 170);
+  border: none;
+}
+
+.search::placeholder {
+  color: rgb(170, 170, 170);
+  background: none;
+  accent-color: none;
+}
+
+.search:focus {
+  outline-width: 0;
+  background: none;
+  accent-color: none;
+}
+
+.submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  width: 4.5rem;
+  height: 4.5rem;
+  backdrop-filter: blur(12px) saturate(500%);
+  background: rgba(200, 200, 200, 0.65);
+  font-size: 2rem;
+}
+
+.lupa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 940px) {
+  .container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    margin: 0;
+    z-index: 4;
+    text-align: left;
+  }
+
+  .search {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    font-size: 1.2rem;
+    color: rgb(170, 170, 170);
+    padding-left: 5rem;
+  }
+
+  .search::placeholder {
+    color: rgb(170, 170, 170);
+  }
+
+  .search:focus {
+    outline-width: 0;
+    background: none;
+  }
+
+  .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    width: 10vh;
+    height: 10vh;
+    backdrop-filter: blur(12px) saturate(500%);
+    background: rgba(200, 200, 200, 0.65);
+    font-size: 1.4rem;
+  }
+
+  .lupa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .search {
+    padding-left: 2rem;
+  }
+}

@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  margin: 3rem 0 4rem 5rem;
+  color: white;
+  padding: 0;
+}
+
+.temp {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.power {
+  position: absolute;
+  bottom: 0;
+}
+
+.temp h1 {
+  font-size: 7rem;
+}
+.name {
+  margin: 2rem;
+}
+
+.name h2 {
+  font-size: 3rem;
+}
+
+@media (max-width: 940px) {
+  .container {
+    position: fixed;
+    padding: 0;
+    margin: 12vh 0 0 2rem;
+    color: white;
+    height: 50vh;
+    width: 100%;
+  }
+  .name {
+    margin: 1rem;
+  }
+
+  .power {
+    font-size: 0.8rem;
+  }
+
+  .temp {
+    bottom: initial;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .temp h1 {
+    font-size: 6rem;
+  }
+
+  .name h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10vh 0 0 1rem;
+  }
+
+  .temp h1 {
+    font-size: 5rem;
+  }
+
+  .name h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .temp h1 {
+    font-size: 4rem;
+  }
+  .name {
+    margin: 1rem 2rem;
+  }
+
+  .name h2 {
+    font-size: 1.5rem;
+  }
+
+  .name p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 65% 35%);
+  justify-content: left;
+  height: 100vh;
+}
+
+.blurSearch {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  backdrop-filter: blur(0px) saturate(100%);
+  background: rgba(50, 50, 50, 0);
+}
+
+.blur {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  backdrop-filter: blur(12px) saturate(150%);
+  background: rgba(50, 50, 50, 0.6);
+}
+
+@media (max-width: 940px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .blurSearch {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: blur(12px) saturate(150%);
+    background: rgba(50, 50, 50, 0.6);
+  }
+
+  .blur {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 26rem;
+    transform: translateY(21rem);
+    backdrop-filter: blur(12px) saturate(150%);
+    background: rgba(50, 50, 50, 0.6);
+  }
+}
